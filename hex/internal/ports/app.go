@@ -1,0 +1,10 @@
+package ports
+
+// import "github.com/R014ND-D35CH41N/SWEasyHexArch/hex/cmd/internal/ports"
+
+type APIPort interface {
+	GetAddition(a, b int32) (int32, error)
+	GetSubtraction(a, b int32) (int32, error)
+	GetMultiplication(a, b int32) (int32, error)
+	GetDivision(a, b int32) (int32, error)
+}
