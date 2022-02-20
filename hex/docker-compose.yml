@@ -25,4 +25,3 @@ services:
     depends_on:
       - db
     command: ["go","test","-v","./..."]
-

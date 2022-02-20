@@ -22,7 +22,7 @@ func main() {
 	var gRPCAdapter ports.GRPCPort
  
 	dbaseDriver := os.Getenv("DB_DRIVER")
-	dsourceName := os.Getenv("DS_NAME")
+	dsourceName := os.Getenv("DB_NAME")
 
 	dbaseAdapter, err = db.NewAdapter(dbaseDriver, dsourceName)
 	if err != nil {
